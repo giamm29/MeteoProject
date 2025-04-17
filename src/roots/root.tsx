@@ -1,7 +1,16 @@
+import Main from "../layout/Main.tsx";
+import Home from "../container/pages/Home.tsx";
+
 export const appRoutes = [
     {
         path: "/",
-        element: <div>Hello World</div>,
+        element: <Main/>,
+        children: [
+            {
+                index: true,
+                element: <Home/>
+            }
+        ]
     },
 ];
 

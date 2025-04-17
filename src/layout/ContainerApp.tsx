@@ -3,7 +3,7 @@ import {Container} from '@mui/material';
 import Header from "./Header";
 import Footer from "./Footer.tsx";
 
-const Main = () => {
+const ContainerApp = () => {
     return (
         <>
             <Header/>
@@ -12,9 +12,7 @@ const Main = () => {
             </Container>
             <Footer/>
         </>
-
-
     );
 };
 
-export default Main;
+export default ContainerApp;

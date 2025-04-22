@@ -6,7 +6,7 @@ const Header = () => {
         <AppBar
             position="static"
             sx={{
-                background: 'linear-gradient(90deg,rgba(10, 178, 245, 1) 0%, rgba(234, 255, 8, 1) 46%, rgba(140, 242, 111, 1) 100%)',
+                background: 'linear-gradient(90deg, rgba(10, 178, 245, 1) 0%, rgba(140, 242, 111, 1) 100%)',
                 backdropFilter: 'blur(10px)',
                 boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
                 borderBottom: '1px solid rgba(255, 255, 255, 0.18)',

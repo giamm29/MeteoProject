@@ -17,10 +17,29 @@ const Home = () => {
 
     return (
         <Box>
-            <Container component="main"
-                       sx={{display: 'flex', flexDirection: 'row', justifyContent: 'spaceBetween'}}>
-                <TextField id="outlined-basic" label="City" variant="outlined" sx={{mr: 2}}
-                           onChange={(e) => setCity(e.target.value)}/>
+            <Container
+                component="main"
+                sx={{
+                    display: 'flex',
+                    flexDirection: {xs: 'column', sm: 'row'},
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: 2,
+                    p: 3,
+                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                    borderRadius: 3,
+                    boxShadow: 4,
+                    maxWidth: 600,
+                    mb: 4,
+                }}
+            >
+                <TextField
+                    id="filled-basic"
+                    label="City"
+                    fullWidth
+                    variant="filled"
+                    sx={{mr: 2}}
+                    onChange={(e) => setCity(e.target.value)}/>
                 <Button
                     type="button"
                     variant="contained"

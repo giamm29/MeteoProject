@@ -5,7 +5,7 @@ const Footer = () => {
         <Box
             component="footer"
             sx={{
-                background: 'linear-gradient(90deg, rgba(140, 242, 111, 1) 0%, rgba(234, 255, 8, 1) 50%, rgba(10, 178, 245, 1) 100%)',
+                background: 'linear-gradient(90deg, rgba(10, 178, 245, 1) 0%, rgba(140, 242, 111, 1) 100%)',
                 color: '#fff',
                 textAlign: 'center',
                 py: 2,
@@ -14,7 +14,7 @@ const Footer = () => {
                 height: '50px'
             }}
         >
-            <Typography variant="body2" sx={{fontWeight: 300, color: '#0e0edd'}}>
+            <Typography variant="body2" sx={{fontWeight: 300, color: '#f3f3f3'}}>
                 © {new Date().getFullYear()} MeteoNow • Powered by 🌦️ Gianmarco Costa
             </Typography>
         </Box>

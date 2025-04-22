@@ -5,7 +5,8 @@ import Footer from "./Footer.tsx";
 
 const ContainerApp = () => {
     return (
-        <>
+        <div
+            style={{background: 'linear-gradient(135deg, rgba(10, 178, 245, 0.9) 0%, rgba(140, 242, 111, 0.9) 100%)'}}>
             <Header/>
             <Container
                 component="main"
@@ -22,7 +23,7 @@ const ContainerApp = () => {
                 </Box>
             </Container>
             <Footer/>
-        </>
+        </div>
     );
 };
 

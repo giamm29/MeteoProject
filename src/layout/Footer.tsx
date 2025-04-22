@@ -15,7 +15,7 @@ const Footer = () => {
             }}
         >
             <Typography variant="body2" sx={{fontWeight: 300, color: '#0e0edd'}}>
-                © {new Date().getFullYear()} MeteoNow • Powered by 🌦️ WeatherAPI
+                © {new Date().getFullYear()} MeteoNow • Powered by 🌦️ Gianmarco Costa
             </Typography>
         </Box>
     );

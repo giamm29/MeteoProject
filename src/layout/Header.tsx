@@ -19,11 +19,11 @@ const Header = () => {
                         <WbSunnyRoundedIcon sx={{color: '#FFD54F', fontSize: 52}}/>
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{fontSize: 25, fontWeight: 900, color: '#fff'}}>
-                        MeteoNow
+                        WeatherNow
                     </Typography>
                 </Box>
                 <Typography variant="body2" sx={{fontSize: 15, color: 'rgba(9,6,6,0.8)'}}>
-                    Scopri il tempo ovunque tu sia
+                    Find out the weather wherever you are
                 </Typography>
             </Toolbar>
         </AppBar>

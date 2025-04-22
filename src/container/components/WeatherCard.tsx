@@ -12,12 +12,32 @@ const WeatherCard: React.FC<WeatherCardProps> = ({data}) => {
     const {location, current} = data;
 
     const icon = current?.condition?.icon;
+    const formatLocalTime = (datetime: string) => {
+        const [datePart, timePart] = datetime.split(" ");
+        const [year, month, day] = datePart.split("-");
+        const date = new Date(`${year}-${month}-${day}T${timePart}`);
+
+        return new Intl.DateTimeFormat("en-EN", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+        }).format(date);
+    };
+
+    const formattedLocalTime = location?.localtime ? formatLocalTime(location.localtime) : "Unknow";
 
     return (
         <Card sx={{maxWidth: 400, mx: 'auto', mt: 4, borderRadius: 4, boxShadow: 3}}>
             <CardContent>
                 <Typography variant="h5" component="div" gutterBottom>
-                    Meteo a {location?.name}, {location?.country}
+                    Weather in {location?.name}, {location?.country}
+                </Typography>
+
+                <Typography variant="body2" sx={{my: 3}} color="text.secondary" gutterBottom>
+                    🕒 Local time: {formattedLocalTime}
                 </Typography>
 
                 <Box display="flex" alignItems="center" gap={2}>
